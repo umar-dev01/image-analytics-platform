@@ -9,7 +9,7 @@ const imageSchema = new mongoose.Schema(
     url: {
       type: String,
       required: true,
-    },
+    }, 
     size: {
       type: Number,
       required: true,
@@ -17,7 +17,7 @@ const imageSchema = new mongoose.Schema(
     label: {
       type: String,
       required: true,
-      lowercase: true,
+      lowercase: true,  
       trim: true,
     },
     uploadedAt: {
@@ -29,3 +29,4 @@ const imageSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("Image", imageSchema);
+     
