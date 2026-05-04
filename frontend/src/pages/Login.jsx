@@ -80,15 +80,15 @@ const Login = () => {
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
-      </div>
       <p className="text-sm text-gray-500 text-center mt-4">
         Don't have an account?{" "}
         <Link to="/register" className="text-blue-600 hover:underline">
           Create one
         </Link>
       </p>
-    </div>
+      </div>
+    </div> 
   );
 };
 
-export default Login;
+export default Login; 

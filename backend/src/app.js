@@ -2,13 +2,13 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const connectDB = require("./config/db");
-
 const authRoutes = require("./routes/auth");
 const imageRoutes = require("./routes/images");
 
 connectDB();
 
 const app = express();
+app.use("/uploads", express.static("uploads"));
 
 app.use(
   cors({
