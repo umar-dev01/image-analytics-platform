@@ -47,7 +47,13 @@ cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend` folder:
+Create a `.env` file in the `backend` folder using `.env.example` as reference:
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+Then fill in your values:
 
 ```env
 PORT=5000
